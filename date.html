@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#date{
+    font-size: 30px;
+    color:indianred;
+    background-color:red;
+    margin: auto;
+    display: block;
+
+}
+body {
+
+    background-color: rgb(12,234, 43);
+}
+#yui{
+    height: 300px;
+    width: 400px;
+    background-color: royalblue;
+}
+
+</style>
+
+<body onload="startTime()" >
+    
+<div id="date"></div>
+<div id="det"></div>
+
+<button id="btn">Hello</button>
+<div id="yui"></div>
+
+<div id="demo">
+    <h2>Let AJAX change this text</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script src="xmlhttp.js"></script>
+    <script>
+
+
+
+
+
+
+
+
+const d=new Date();
+const det=document.getElementById('det');
+
+det.innerHTML=d.toLocaleTimeString();
+
+    console.log(d.toLocaleTimeString())
+
+
+console.log(d.getMinutes());
+
+if(d.getMinutes()<60){
+    console.log('not yet');
+}
+
+
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+    
+      m = checkTime(m);
+       s = checkTime(s);
+
+      document.getElementById('det').innerHTML =
+            h + ":" + m + ":" + s;
+
+
+
+    
+
+       
+        
+
+      var t = setTimeout(startTime, 500);
+
+   }
+
+
+    
+      function   checkTime(i){
+
+
+            if (i < 10) {
+                 i = `0${i}` 
+            }
+
+
+          return i;
+        
+        }
+console.log(window);
+   let bod=document.getElementById('yui'); 
+
+ //  console.log(bod[0]);
+
+   let re=45;
+let btn=document.getElementById('btn')
+   bod.addEventListener('click',show);
+function show(event) {
+    
+
+   let b=event.clientX;
+   let c=event.clientY;
+
+   console.log('im workng');
+
+bod.style.backgroundColor=`rgb(${b},${c},${b})`;
+
+
+}
+
+let name=1;
+function tern(name) {
+
+
+name--;
+console.log(name);
+
+name<1?console.log('juzi'):console.log('false')
+   
+}
+tern(name);
+
+let arr=['45','679','986'];
+arr[2]=arr[0];
+console.log(arr[2]);
+let my='jamio';
+my[2]=my[0];
+console.log(my[2]);
+
+
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(reverseString('james'))
+let srt='kuioppe'
+console.log(reverseString(srt));
+
+
+function rev(str){
+ return str.split('');
+  
+
+    // str.push('k');
+     //str.join('');
+}
+
+
+console.log(rev('kui'));
+let jim='kiom'
+
+//console.log(k);
+
+function treb(stri) {
+   let k= stri.split("");
+   console.log(k.length);
+   const z=k.length-1;
+
+  for(i=z; i>=0;i--){
+   k.push(k[i])
+  //k.shift();
+    console.log(i);
+
+//   stri.push('kui');
+  }
+  console.log(k.length);
+  let y=(k.length/2)-1;
+    for (i = y; i >= 0; i--) {
+     //   k.push(k[i])
+        k.shift();
+        console.log(i);
+
+       
+    }
+
+
+    return k.join('');
+    
+}
+
+
+
+
+
+
+
+let k='heelo world'
+console.log(treb(k));
+
+//console.log( shift(['jim','kim','lom']))
+console.log(jim.split('').shift());
+
+
+
+/*
+let iuy='kui';
+iuy.split();
+iuy.push('k');
+console.log(iuy);
+
+
+
+  /*  if (this.engagement === 'social-crm') { return item.verified === true; }
+    else {
+        if (this.engagement === 'social') { item.verified === false; }
+        else {
+            if (this.engagement === 'all') { return item; }
+        }
+    }
+
+let names='james'
+console.log(names[4]);
+
+
+console.log(names.length);
+
+for (i=names.length-1;i>=0;i--){
+
+let  g=names.length-1;
+let h=0;
+
+names[h]=names[4];
+console.log(names[h]);
+h++;
+g--;
+console.log(names);
+
+}
+names[0]=names[4]
+console.log(names[0]);
+
+console.log(names);
+*/
+
+
+
+
+
+
+  //  name < 1 ? console.log('juzi') : console.log('false')
+
+    </script>
+</body>
+</html>

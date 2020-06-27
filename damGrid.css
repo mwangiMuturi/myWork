@@ -1,0 +1,119 @@
+.forme{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1em;
+    
+}
+.one{
+    grid-column: 1/2;
+  
+   
+}
+.two{
+grid-row: 2/3;
+
+
+}
+.three{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.four{
+    grid-column:2/4 ;
+    grid-row: 1/3;
+   
+}
+.blockz{
+    border-radius: 7px;
+    border: solid grey;
+    font-family: 'MuseoMorderno',cursive;
+   
+}
+.footer{
+    height: 50px;
+    background: darkgrey;
+
+}
+.thre{
+    display: flex;
+
+}
+.fir{
+    border-right:solid white ;
+}
+.sec{
+    border-right: solid white;
+}
+.images{
+    display: grid;
+   grid-template-columns: 30% 70%;
+   grid-gap: 1em;
+
+}
+.images img{
+    max-width:400px;
+}
+
+
+#on{
+grid-row: 2/4;
+}
+#tw{
+    grid-column: 1/3;
+}
+#th{
+    grid-column: 1/2;
+}
+#fo{
+    grid-row: 2/4;
+    grid-column: 1/2;
+}
+
+
+
+
+
+
+
+
+
+.dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+   
+    display:inline-block
+}
+.doti{
+   transition: ease-in 1s;
+    background-color: teal;
+}
+.active{
+     transition: ease-in 1s;
+    background-color: green;
+}
+.lod span{
+    background-color:green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lod span:nth-child(2){
+    background-color: yellow;
+    animation-delay: .4s;
+}
+.lod span:nth-child(3){
+    background-color: red;
+    animation-delay: .8s;
+}
+@keyframes  dots{
+    50%{
+        opacity: 0;
+     
+    }
+}

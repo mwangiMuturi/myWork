@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horoscopes.com</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link    href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Rum+Raisin&display=swap"rel="stylesheet">
+     <link rel="icon" href="https://cafeastrology.com/wp-content/uploads/2018/11/allsigns-pink.png">
+
+</head>
+<style>
+body{
+    margin: 0px;
+    padding: 0px;
+   
+   
+}
+a:hover{
+    color:brown;
+}
+.navb{
+    height: 100px;
+    background-color: blueviolet;
+}
+    .contain{
+       margin-left: 15%;
+       margin-right:15% ;
+       padding-top: 1em;
+        background-color:blanchedalmond;
+    opacity: 1;
+    
+    overflow-x: visible;
+    }
+.intro{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left{
+    flex-basis: 40%;
+    
+    font-family: sans-serif;
+    
+   /* border: solid #dddd 2px;*/
+    border-radius: 7px;
+    color:brown;
+   
+    
+   
+}
+.text{
+    mix-blend-mode:screen;
+    background-color:palevioletred;
+    opacity: 0.5;
+   
+
+}
+.right{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg);
+   background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-basis: 40%;
+background-color:brown;
+border-radius: 4px;
+font-family: 'lobster',sans-serif;
+font-size: 5vw;
+height: 200px;
+
+
+}
+.horoscopes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+.horoscopes >div{
+    flex-basis: 30%;
+    border: burlywood solid;
+    border-radius: 10px;
+    padding: 5px;
+    
+    font-family: 'changa';
+    
+}
+.space{
+    height: 130px;
+    background-color:burlywood;
+    padding-right: 15%;
+    padding-left: 15%;
+   justify-content: space-between;
+    
+}
+.space ul{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+
+
+
+
+}
+.space>ul>li>a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 7px;
+   
+}
+
+.space>ul>li{
+   
+    padding: 7px;
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.space>ul>li>img{
+    height: 30px;
+    width: 30px;
+    
+}
+.horHeader{
+    display: flex;
+    align-items:flex-start;
+    
+   /* border: solid black ;*/
+    margin-bottom: 0px;
+    
+
+   padding: 5px;
+}
+.horHeader img{
+    width: 30px;
+    height:30px;
+    object-fit: cover;
+}
+
+
+.copyright{
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    
+}
+
+@media(max-width: 900px){
+    .horoscopes{
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .horoscopes>div{
+       
+      margin-top: 10px;
+
+    }
+    .space{
+        padding-left: 10px;
+        padding-right: 2%;
+    }
+}
+@media(max-width: 700px){
+    .contain{
+        margin: 10px;
+    }
+}
+@media(max-width:550px){
+.space>ul>li{
+flex-basis: 23%;
+text-align: center;
+  flex-direction: column;
+}
+.space>ul>li>a{
+   
+ font-size: 15px;
+}
+.space{
+    height: 200px;
+}
+}
+@media (max-width: 320px) {
+    .space>ul>li>a{
+        display:none;
+    }
+}
+.tester img{
+   position:fixed;
+
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+}
+</style>
+<body class="pre-scrollable">
+
+    <div class="tester">
+        <h1>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Reiciendis, rerum?</h1>
+    <img src="https://techcrunch.com/wp-content/uploads/2018/02/gettyimages-637913006.jpg" alt="">
+    </div>
+<nav class="navbar">
+   
+</nav>
+
+
+    <div class="contain p-4 ">
+    <div class="intro">
+        <div class="left">This website is about horoscopes. Now personally
+    I find the belief in horoscopes quite absurd but i had to make 
+a website about something. This feels like a punishment. There may be
+grammatical errors in the content, I only speak English in my brain.
+</div>
+
+             <div class="right">
+                 <div class="text">Try me</div></div>
+
+    </div>
+<div class="horoscopes">
+    <div class="hor1">
+        <div class="horHeader">
+           
+            <img src="https://icons.iconarchive.com/icons/icons-land/flat-zodiac/256/Sagittarius-icon.png"
+             alt="">
+            <h2> Sagitarrius</h2>
+        </div>
+       
+    
+        <p> This day will be the best day of your life.
+            All your dreams will come true due to the activities this day brings you. Keep the doors
+            open and your windows lose. It will be a memoir.
+        </p>
+    </div>
+  
+
+    <div class="hor2">
+        <div class="horHeader">
+        
+           <img src="https://cdn2.iconfinder.com/data/icons/zodiac-signs-2/128/Aries-512.png" alt="">
+            <h2> Aries</h2>
+        </div>
+    
+        <p class="hor2  "> This day will be the best day of your life.
+            All your dreams will come true due to the activities this day brings you. Keep the doors
+            open and your windows lose. It will be a memoir.
+        </p>
+    </div>
+
+    <div class="hor3">
+        
+        <div class="horHeader">
+        
+            <img src="https://icons.iconarchive.com/icons/icons-land/flat-zodiac/256/Cancer-icon.png" alt="">
+            <h2>Cancer</h2>
+        </div>
+
+        <p> This day will be the best day of your life.
+            All your dreams will come true due to the activities this day brings you. Keep the doors
+            open and your windows lose. It will be a memoir.
+        </p>
+    </div>
+</div>
+    </div>
+<button onclick="loadDoc()" class="btn btn-dark">I'm going to change the world.</button>
+<div id="demo"><p>I am the world. Please change me</p></div>
+
+<div class="space">
+
+<ul>
+  
+    <li><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt=""><a href="#">Facebook</a>
+    </li>
+
+    <li><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-512.png" alt=""><a href="#">Twitter</a> 
+    </li>
+
+    <li><img src="https://pluspng.com/img-png/instagram-png-instagram-png-logo-1455.png" alt=""><a href="#">Instagram</a>
+    </li>
+
+    <li><img src="https://i.pinimg.com/originals/79/dc/31/79dc31280371b8ffbe56ec656418e122.png" alt=""><a href="#">Whatsapp</a>
+    </li>
+
+    <li><img src="https://static.thenounproject.com/png/105260-200.png" alt=""><a href="#">Memes</a>
+    </li>
+
+    <li><img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/80-512.png" alt=""><a href="#">Find love</a>
+    </li>
+
+</ul>
+
+</div>
+<div class="copyright">&copy; 2020 All rights reserved.</div>
+
+<script src="xmlhttp.js"></script>
+</body>>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+        text-align: center;
+        
+    }
+    li{
+        list-style-position: inside;
+    }
+    input{
+        border: none;
+        background-color: burlywood;
+        height: 2em;
+        border-radius: 10px;
+        margin-right: 10px;
+        outline: none;
+        text-indent: 2em;
+    }
+    input:focus{
+        background-color:lightseagreen
+    }
+    output{
+        background-color: cadetblue;
+
+
+    }
+    button{
+        display:inline-block;
+        border: 0px;
+        background-color: chocolate;
+        height: 2em;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: cornflowerblue;
+        border: 0px;
+    }
+    button:focus{
+        background-color: green;
+        outline: none;
+      
+    }
+    
+    h3{
+        text-decoration: underline;
+    }
+    #result{
+        height: 100px;
+        margin: auto;
+        width: 400px;
+        background-color: darkcyan;
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 3em;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contain{
+        background-color: blue;
+        margin: 3em;
+        padding: 1em;
+        padding-bottom: 500px;
+        border-radius: 10px;
+    }
+    .behind{
+        background-color: blueviolet;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+    }
+</style>
+  
+<body>
+    <div class="behind"></div>
+    <div class="contain">
+<h1>JSON</h1>
+<div id="peoplez">
+    <ul></ul>
+</div>
+
+<ul>
+    <li>jok</li>
+    <li>jok</li>
+    <li>jok</li>
+
+</ul>
+<input type="text" name="input" id="roman" placeholder="enter number"></INPUT>
+<button id="btn">Convert</button>
+<br>
+<br>
+<h3>The Result</h3>
+<div id="result">HOW</div>
+    </div>
+
+
+
+    <script src="json.js"></script>
+</body>
+</html>
